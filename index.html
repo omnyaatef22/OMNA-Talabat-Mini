@@ -315,5 +315,6 @@ function download(w){ const f=DATA?.files?.[w.name]; if(!f){toast("Download is n
 function route(){ const h=MODE==="hub"?location.hash.slice(1):MODE; const p=MODE==="hub"?null:P.find(x=>x.slug===h); scrollTo(0,0); if(p){document.title=`${p.name} · ${p.sub} by OMNA`;project(p)} else {document.title="OMNA Automation Studio";document.documentElement.style.removeProperty("--p");hub()} }
 addEventListener("hashchange",route); route();
 </script>
+<script src="https://omnyaatef22.github.io/OMNA-Automation-Projects/themes.js"></script>
 </body>
 </html>
